@@ -52,12 +52,14 @@ Récupérer le projet sur git
 06:25 
 ## Styles, Layouts, Containers 
 Nous allons modifier le fichier ``` src\app\globals.css ``` , 
-Nous allons définir les styles global par défaut : 
+Nous allons définir les styles global par défaut
 
+10:35   
+## CSS Responsive Layout Tutorial
+Pour toutes les tailles d'écan nous definisson les margin , padding, mx width. 
 
-
-10:35 CSS Responsive Layout Tutorial
-14:30 Next.js CSS Styles and Layout
+14:30 
+## Next.js CSS Styles and Layout
 20:00 Responsive Navbar Design
 28:40 CSS Dark Mode Theme Toggle Design
 31:25 Next.js Context API Tutorial

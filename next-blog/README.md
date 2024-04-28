@@ -54,18 +54,20 @@ Récupérer le projet sur git
 Nous allons modifier le fichier ``` src\app\globals.css ``` , 
 Nous allons définir les styles global par défaut
 
-10:35   
-## CSS Responsive Layout Tutorial
-Pour toutes les tailles d'écan nous definisson les margin , padding, mx width. 
+10:35
 
-14:30 
+## CSS Responsive Layout Tutorial
+
+Pour toutes les tailles d'écan nous definisson les margin , padding, mx width.
+
+14:30
+
 ## Next.js CSS Styles and Layout
 
-ici nous créons le navbar et le footer 
+ici nous créons le navbar et le footer
 
 ce sont de composant qui vont être utilisé sur toutes les pages
 donc nous allons les mettre dans ```src\app\layout.js```  
-
 
         export default function RootLayout({ children }) {
             return (
@@ -107,6 +109,9 @@ src/components/Menu
 src/components/navbar 
     src/components/navbar/Navbar.jsx 
     src/components/navbar/navbar.module.css
+src/components/pagination 
+    src/components/pagination/Pagination.jsx 
+    src/components/pagination/pagination.module.css
 ```
 
 Chaque composant a un structure de base : 
@@ -127,21 +132,22 @@ export default Navbar;
 
 ```
 
+La classe ```className={styles.container}```  est défini dans ```src\components\navbar\navbar.module.css``` .
 
 Une fois tous les composants créés, il faut les appeler sur la page d'accueil dans ```src\app\pages.jsx``` 
 
+Pour la suite nous allons nous occuper du design de la navbar
+20:00
 
-
-
-20:00 
 ## Responsive Navbar Design
-28:40 CSS Dark Mode Theme Toggle Design
-31:25 Next.js Context API Tutorial
-45:40 Next.js Responsive Hamburger Menu Tutorial
-54:00 Blog App Featured Post Design
-58:30 Blog App Category Component Design
-01:06:40 CSS Flexbox (Content - Side Menu Design)
-01:08:00 Blog Post Card Component Design
+
+28:40 CSS Dark Mode Theme Toggle Design  
+31:25 Next.js Context API Tutorial  
+45:40 Next.js Responsive Hamburger Menu Tutorial  
+54:00 Blog App Featured Post Design  
+58:30 Blog App Category Component Design  
+01:06:40 CSS Flexbox (Content - Side Menu Design)  
+01:08:00 Blog Post Card Component Design  
 01:15:00 Side Menu Component Design
 01:32:10 Pagination Button Design
 01:33:20 Footer Component Design 

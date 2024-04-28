@@ -60,7 +60,81 @@ Pour toutes les tailles d'écan nous definisson les margin , padding, mx width.
 
 14:30 
 ## Next.js CSS Styles and Layout
-20:00 Responsive Navbar Design
+
+ici nous créons le navbar et le footer 
+
+ce sont de composant qui vont être utilisé sur toutes les pages
+donc nous allons les mettre dans ```src\app\layout.js```  
+
+
+        export default function RootLayout({ children }) {
+            return (
+                <html lang="en">
+                <body className={inter.className}>
+                    <div className="container">
+                    <div className="wrapper">
+                        <Navbar />
+                        {children}
+                        <Footer />
+                    </div>  
+                    </div>
+                </body>
+                </html>
+            )
+        }
+
+
+Ce qui est dans children est dans la page ``` home ``` qui se situe dans ```src\app\pages.jsx```  
+donc c'est ici qu'on va pouvoir appeler tous les composant de la page d'accueil mais avant il faut les créer : 
+
+
+```  
+src/components/cardList 
+    src/components/cardList/CardList.jsx 
+    src/components/cardList/cardList.module.css 
+src/components/categoryList 
+    src/components/categoryList/CategoryList.jsx 
+    src/components/categoryList/categoryList.module.css 
+src/components/featured 
+    src/components/featured/Featured.jsx 
+    src/components/featured/featured.module.css 
+src/components/footer 
+    src/components/footer/Footer.jsx 
+    src/components/footer/footer.module.css 
+src/components/Menu 
+    src/components/Menu/Menu.jsx 
+    src/components/Menu/menu.module.css 
+src/components/navbar 
+    src/components/navbar/Navbar.jsx 
+    src/components/navbar/navbar.module.css
+```
+
+Chaque composant a un structure de base : 
+
+
+```jsx  
+
+import React from "react";
+import styles from "./navbar.module.css"
+
+const Navbar = () => {
+    return (
+        <div className={styles.container} >Navbar</div>
+    )
+}
+
+export default Navbar;
+
+```
+
+
+Une fois tous les composants créés, il faut les appeler sur la page d'accueil dans ```src\app\pages.jsx``` 
+
+
+
+
+20:00 
+## Responsive Navbar Design
 28:40 CSS Dark Mode Theme Toggle Design
 31:25 Next.js Context API Tutorial
 45:40 Next.js Responsive Hamburger Menu Tutorial
